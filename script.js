@@ -92,8 +92,8 @@ window.onload = function() {
 };
 
 function checkCodes(button) {
-    const code1 = document.getElementById('code1').value;
-    const code2 = document.getElementById('code2').value;
+    const code1 = document.getElementById("code1").value;
+    const code2 = document.getElementById("code2").value;
     
     // Récupérer les codes requis depuis les attributs du bouton
     const requiredCode1 = button.getAttribute('data-code1');
