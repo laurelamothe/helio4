@@ -90,3 +90,22 @@ function addPoints(points) {
 window.onload = function() {
     updatePoints();
 };
+
+function checkCodes(button) {
+    const code1 = document.getElementById('code1').value;
+    const code2 = document.getElementById('code2').value;
+    
+    // Récupérer les codes requis depuis les attributs du bouton
+    const requiredCode1 = button.getAttribute('data-code1');
+    const requiredCode2 = button.getAttribute('data-code2');
+
+    // Récupérer le lien de redirection depuis l'attribut du bouton
+    const redirectUrl = button.getAttribute('data-url');
+
+    if (code1 === requiredCode1 && code2 === requiredCode2) {
+        // Redirection vers l'URL spécifiée
+        location.href = redirectUrl;
+    } else {
+        alert('Codes incorrects');
+    }
+};
