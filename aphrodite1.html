@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Page avec Codes</title>
+</head>
+<body>
+    <h1>Temple d'Aphrodite</h1>
+    <p> + beauté</p>
+    <p> - vitesse</p>
+    <div class="carre-bleu">
+        <h3>Trouvez Pégaze et les membres du temple de Chronos</h3>
+        <div id="countdown-container" data-end-time="2024-08-03T18:00:00Z">
+            <p id="countdown" class="countdown-text">Compte à Rebours : 00:00:00</p>
+        </div>        <div class="container"></div>
+    </div>
+    <br></br>
+    <div class="carre-bleu">
+        <div class="container"></div>
+        <input type="text" id="code1" placeholder="Incantation de Pégaze">
+        <br></br>
+        <input type="text" id="code2" placeholder="Incantation de Chronos">
+        <br></br>
+        <button data-code1="1234" data-code2="5678" data-url="aphrodite2.html" onclick="checkCodes(this)">Valider</button>
+        <br></br>
+        <p>Vorte incantation pour Chronos est : aphrodite</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

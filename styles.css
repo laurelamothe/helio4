@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('images/sky4.gif');
+    background-size: cover; /* S'adapte à la taille de l'écran */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+    background-attachment: fixed; /* Fixe l'image lors du défilement */
+    background-position: center; /* Centre l'image */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les marges par défaut */
+}
+
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 31, 63, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    /*box-shadow: 0 0 20px rgba(0, 31, 63, 0.8);*/
+}
+
+button {
+    background-color: #0074D9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #0074D9;
+}
+
+.hidden {
+    display: none;
+} 
+
+
+
+/* Bouton large */
+.btn-large {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+}
+
+/* Bouton petit */
+.btn-small {
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+}
+
+/* Bouton personnalisé */
+.btn-custom {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    padding: 15px 25px; /* Marges internes pour ajuster la taille */
+    background-color: #4CAF50; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 10px; /* Bords arrondis */
+    /*box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Ombre */
+}
+
+/* Style pour la div conteneur */
+.container {
+    width: 300px; /* Largeur de la div conteneur */
+    background-color: rgba(0, 0, 0, 0); /* Couleur de fond */
+    /*border: 1px solid rgba(0, 0, 0, 0); /* Bordure pour visualiser la div conteneur */
+    padding: 10px; /* Espacement interne pour éviter que le carré touche les bords */
+    box-sizing: border-box; /* Inclut la bordure et le padding dans la largeur totale */
+    display: flex; /* Utilisation de Flexbox pour le positionnement */
+    justify-content: center; /* Centre le carré horizontalement */
+    align-items: center; /* Centre le carré verticalement */
+    min-height: 10px; /* Hauteur minimale pour voir le contenu à l'intérieur du conteneur */
+    flex-direction: column; /* Aligne les éléments en colonne */
+}
+
+/* Style pour le carré bleu */
+.carre-bleu {
+    width: calc(100% - 80px); /* Largeur égale à 100% du conteneur moins 10px */
+    background-color: rgba(46, 168, 255, 0.628); /* Couleur de fond bleue */
+    display: flex; /* Utilisation de Flexbox pour centrer le texte */
+    justify-content: center; /* Centre le texte horizontalement */
+    align-items: center; /* Centre le texte verticalement */
+    padding: 5px; /* Espacement interne pour que le texte ne touche pas les bords */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+    flex-direction: column; /* Aligne les éléments en colonne */
+
+}
+
+.carre-bleu p {
+    margin: 0; /* Enlève les marges par défaut du paragraphe */
+    color: white; /* Couleur du texte */
+    flex-direction: column; /* Aligne les éléments en colonne */
+
+}
+
+
+/* Style pour le texte de la cagnotte */
+.cagnotte-text {
+    font-size: 40px; /* Taille du texte */
+    font-weight: bold; /* Gras */
+    color: #4CAF50; /* Couleur du texte (vert) */
+    text-align: center; /* Alignement du texte */
+    padding: 20px; /* Espacement autour du texte */
+    border: 2px solid #4CAF50; /* Bordure verte */
+    border-radius: 8px; /* Coins arrondis */
+    background-color: #f9f9f9; /* Couleur de fond légèrement grise */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Style pour le texte du compte à rebours */
+.countdown-text {
+    font-size: 24px; /* Taille du texte */
+    font-weight: bold; /* Gras */
+    color: #FF5722; /* Couleur du texte (orange) */
+    text-align: center; /* Alignement du texte */
+    padding: 20px; /* Espacement autour du texte */
+    border: 2px solid #FF5722; /* Bordure orange */
+    border-radius: 8px; /* Coins arrondis */
+    background-color: #FFF3E0; /* Couleur de fond légèrement crème */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
