@@ -137,3 +137,34 @@ input {
     background-color: #FFF3E0; /* Couleur de fond légèrement crème */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
 }
+
+
+
+/* Style pour le header */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Image du header */
+.header-image {
+    flex: 0 0 20%; /* Fixe la largeur à 20% */
+}
+
+.header-image img {
+    width: 100%; /* S'adapte à la taille du conteneur */
+    height: auto; /* Conserve les proportions de l'image */
+}
+
+/* Titre du header */
+.header-title {
+    flex: 1; /* Occupe l'espace restant */
+    padding-left: 20px; /* Espace entre l'image et le titre */
+}
+
+.header-title h1 {
+    font-size: 24px; /* Taille du texte du titre */
+    color: #333; /* Couleur du texte du titre */
+}
