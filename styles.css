@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Verdana', sans-serif;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,9 @@ body {
     margin: 0; /* Supprime les marges par défaut */
     padding: 0; /* Supprime les marges par défaut */
 }
-
+h1 {
+    font-family: 'Trebuchet MS', Courier, monospace;
+}
 
 .container {
     text-align: center;
@@ -25,7 +27,8 @@ body {
 }
 
 button {
-    background-color: #0074D9;
+    font-family: 'Trebuchet MS', Courier, monospace;
+    background-color: rgb(13, 59, 91);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -52,6 +55,7 @@ input {
 
 /* Bouton large */
 .btn-large {
+    font-family: 'Trebuchet MS', Courier, monospace;
     width: 200px;
     height: 50px;
     font-size: 18px;
@@ -59,6 +63,7 @@ input {
 
 /* Bouton petit */
 .btn-small {
+    font-family: 'Trebuchet MS', Courier, monospace;
     width: 100px;
     height: 30px;
     font-size: 14px;
@@ -66,11 +71,12 @@ input {
 
 /* Bouton personnalisé */
 .btn-custom {
+    font-family: 'Trebuchet MS', Courier, monospace;
     width: 150px;
     height: 40px;
     font-size: 16px;
     padding: 15px 25px; /* Marges internes pour ajuster la taille */
-    background-color: #4CAF50; /* Couleur de fond */
+    background-color: rgb(13, 59, 91); /* Couleur de fond */
     color: white; /* Couleur du texte */
     border: none; /* Pas de bordure */
     border-radius: 10px; /* Bords arrondis */
@@ -79,6 +85,7 @@ input {
 
 /* Style pour la div conteneur */
 .container {
+    font-family: 'Trebuchet MS', Courier, monospace;
     width: 300px; /* Largeur de la div conteneur */
     background-color: rgba(0, 0, 0, 0); /* Couleur de fond */
     /*border: 1px solid rgba(0, 0, 0, 0); /* Bordure pour visualiser la div conteneur */
@@ -105,6 +112,7 @@ input {
 }
 
 .carre-bleu p {
+    font-family: 'Trebuchet MS', Courier, monospace;
     margin: 0; /* Enlève les marges par défaut du paragraphe */
     color: white; /* Couleur du texte */
     flex-direction: column; /* Aligne les éléments en colonne */
@@ -114,27 +122,29 @@ input {
 
 /* Style pour le texte de la cagnotte */
 .cagnotte-text {
+    font-family: 'Trebuchet MS', Courier, monospace;
     font-size: 40px; /* Taille du texte */
     font-weight: bold; /* Gras */
-    color: #4CAF50; /* Couleur du texte (vert) */
+    color: rgb(255, 255, 255); /* Couleur du texte (vert) */
     text-align: center; /* Alignement du texte */
     padding: 20px; /* Espacement autour du texte */
-    border: 2px solid #4CAF50; /* Bordure verte */
+    border: 2px solid #4caf4f00; /* Bordure verte */
     border-radius: 8px; /* Coins arrondis */
-    background-color: #f9f9f9; /* Couleur de fond légèrement grise */
+    background-color: rgb(13, 59, 91); /* Couleur de fond légèrement grise */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
 }
 
 /* Style pour le texte du compte à rebours */
 .countdown-text {
+    font-family: 'Trebuchet MS', Courier, monospace;
     font-size: 24px; /* Taille du texte */
     font-weight: bold; /* Gras */
-    color: #FF5722; /* Couleur du texte (orange) */
+    color: #ffffff; /* Couleur du texte (orange) */
     text-align: center; /* Alignement du texte */
     padding: 20px; /* Espacement autour du texte */
-    border: 2px solid #FF5722; /* Bordure orange */
+    border: 2px solid #ff562200; /* Bordure orange */
     border-radius: 8px; /* Coins arrondis */
-    background-color: #FFF3E0; /* Couleur de fond légèrement crème */
+    background-color: rgb(13, 59, 91); /* Couleur de fond légèrement crème */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
 }
 
@@ -142,10 +152,11 @@ input {
 
 /* Style pour le header */
 .header {
+    font-family: 'Trebuchet MS', Courier, monospace;
     display: flex;
     align-items: center;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #f0f0f000;
 }
 
 /* Image du header */

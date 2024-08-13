@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Page recherche poseidon 5</title>
+</head>
+<body>
+    <div class="container"></div>
+
+    
+    <h1>Temple de Poséidon</h1>
+    <p> + Vitesse</p>
+    <p> - Adresse</p>
+    <div class="carre-bleu">
+        <h3>Trouvez le Centaure et les membres du temple de Zeus</h3>
+        <p>Entrez les incantations pour passer à l'étape suivante. Si vous le faites avant la fin du compte à rebours, vous gagnerez des points ! </p>
+        <br></br>
+        <div id="countdown-container" data-end-time="2024-08-03T18:00:00Z">
+            <p id="countdown" class="countdown-text">Compte à Rebours : 00:00:00</p>
+        </div>        <div class="container"></div>
+    </div>
+    <br></br>
+    <div class="carre-bleu">
+        <div class="container"></div>
+        <input type="text" id="code1" placeholder="Incantation du Centaure">
+        <br></br>
+        <input type="text" id="code2" placeholder="Incantation de Zeus">
+        <br></br>
+        <button data-code1="flechettes" data-code2="cicatrice" data-url="poseidon-epreuve-5.html" onclick="checkCodes(this)">Valider</button>
+        <br></br>
+        <p>Vorte incantation pour Zeus est : fourchette</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
