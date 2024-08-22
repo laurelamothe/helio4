@@ -12,12 +12,14 @@
     <div class="carre-bleu">
         <h2>Epreuve du Sagittaire</h2>
         <h3>Collaborez avec le temple d'Aphrodite.<br></h3>
-        Texte de l'épreuve
-        </p>
+
+
+        <div class="container"></div>
+        <input type="text" id="code1" placeholder="Réponse">
         <br></br>
-        <button class="btn-large" onclick="addPointsAndRedirect(100, this.getAttribute('data-redirect'))" data-redirect="poseidon-recherche-3.html">Gagné !</button>
+        <button data-code1="1" data-url="poseidon-recherche-3.html" onclick="check1Codes(this)">Valider</button>
         <br></br>
-        <button class="btn-large" onclick="location.href='poseidon-recherche-3.html'">Perdu...</button>
+        <button class="btn-large" onclick="location.href='poseidon-recherche-3.html'">Abandon...</button>
         <br></br>
     </div>
     

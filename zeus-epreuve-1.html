@@ -12,12 +12,13 @@
     <div class="carre-bleu">
         <h2>Epreuve d'Orion</h2>
         <h3>Collaborez avec le temple d'Hermès.<br></h3>
-        Texte de l'épreuve
-        </p>
+        
+        <div class="container"></div>
+        <input type="text" id="code1" placeholder="Réponse">
         <br></br>
-        <button class="btn-large" onclick="addPointsAndRedirect(100, this.getAttribute('data-redirect'))" data-redirect="zeus-recherche-2.html">Gagné !</button>
+        <button data-code1="47" data-url="zeus-recherche-2.html" onclick="check1Codes(this)">Valider</button>
         <br></br>
-        <button class="btn-large" onclick="location.href='zeus-recherche-2.html'">Perdu...</button>
+        <button class="btn-large" onclick="location.href='zeus-recherche-2.html'">Abandon...</button>
         <br></br>
     </div>
     
