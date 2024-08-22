@@ -141,7 +141,7 @@ function check1Codes(button) {
 
     // Vérifier si le code entré est correct
     if (userInput === correctCode) {
-        alert(`Félicitations ! Vous avez gagné ${100} points.`); // Afficher une alerte avec le nombre de points gagnés
+        alert(`Félicitations ! Vous avez gagné 100 points.`); // Afficher une alerte avec le nombre de points gagnés
         window.location.href = redirectUrl;
 
         addPoints(100); // Ajouter le nombre de points souhaité
