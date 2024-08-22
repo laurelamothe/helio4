@@ -16,6 +16,7 @@ body {
 }
 h1 {
     font-family: 'Trebuchet MS', Courier, monospace;
+    text-align: center;
 }
 
 .container {
