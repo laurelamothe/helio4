@@ -179,3 +179,39 @@ input {
     font-size: 24px; /* Taille du texte du titre */
     color: #333; /* Couleur du texte du titre */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.progress-bar-container {
+    width: 80%;
+    background-color: #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #620313;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    transition: width 1s linear;
+}

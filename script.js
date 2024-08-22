@@ -139,3 +139,43 @@ function addPoints(points) {
 }
 
 
+
+function updateCountdown() {
+    const progressBarContainer = document.querySelector('.progress-bar-container');
+    const progressBar = document.getElementById('progress-bar');
+
+    if (!progressBarContainer || !progressBar) return;
+
+    // Récupère la durée à partir de l'attribut data-duration
+    const duration = parseInt(progressBarContainer.getAttribute('data-duration'), 10);
+
+    if (isNaN(duration)) return;
+
+    const endTime = new Date().getTime() + duration * 1000; // Calcul de l'heure de fin
+    const totalTime = duration * 1000; // Temps total en millisecondes
+
+    function calculateTimeRemaining() {
+        const now = new Date().getTime();
+        const distance = endTime - now;
+
+        if (distance < 0) {
+            progressBar.style.width = '0%';
+            clearInterval(updateCountdownInterval);
+            return;
+        }
+
+        // Calculer la largeur de la jauge de progression
+        const percentage = (distance / totalTime) * 100;
+        progressBar.style.width = `${percentage}%`;
+    }
+
+    calculateTimeRemaining();
+    const updateCountdownInterval = setInterval(calculateTimeRemaining, 1000); // Met à jour chaque seconde
+}
+
+// Attacher un événement de clic au bouton pour lancer la jauge
+const startButton = document.getElementById('start-button');
+startButton.addEventListener('click', function() {
+    updateCountdown();
+    startButton.disabled = true; // Désactiver le bouton après le clic
+});
