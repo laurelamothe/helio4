@@ -115,11 +115,12 @@ function checkCodes(button) {
     if (code1 === requiredCode1 && code2 === requiredCode2) {
         // Si le compte à rebours n'est pas terminé, ajouter des points
         if (now < countdownDate) {
+            alert(`Félicitations ! Vous avez gagné ${10} points.`); // Afficher une alerte avec le nombre de points gagnés
+            location.href = redirectUrl;
             addPoints(10); // Ajouter le nombre de points souhaité
-            alert(`Félicitations ! Vous avez gagné ${points} points.`); // Afficher une alerte avec le nombre de points gagnés
 
         } else {
-            alert("Le compte à rebours est terminé. Les points ne seront pas ajoutés.");
+            alert("Le compte à rebours est terminé, dommage.");
         }
 
         // Redirection vers l'URL spécifiée
@@ -129,6 +130,29 @@ function checkCodes(button) {
     }
 }
 
+// Fonction pour vérifier le code et rediriger
+function check1Codes(button) {
+    // Récupérer le code correct et l'URL depuis les attributs du bouton
+    var correctCode = button.getAttribute('data-code1');
+    var redirectUrl = button.getAttribute('data-url');
+
+    // Récupérer le code entré par l'utilisateur
+    var userInput = document.getElementById('code1').value;
+
+    // Vérifier si le code entré est correct
+    if (userInput === correctCode) {
+        alert(`Félicitations ! Vous avez gagné ${100} points.`); // Afficher une alerte avec le nombre de points gagnés
+        window.location.href = redirectUrl;
+
+        addPoints(100); // Ajouter le nombre de points souhaité
+
+    } else {
+        // Afficher un message d'erreur si le code est incorrect
+        alert('Code incorrect. Veuillez réessayer pour gagner des points.');
+    }
+}
+
+
 // Fonction pour ajouter des points et mettre à jour le stockage local
 function addPoints(points) {
     let currentPoints = parseInt(localStorage.getItem('cagnottePoints')) || 0;
@@ -137,7 +161,6 @@ function addPoints(points) {
     updatePoints(); // Mettre à jour l'affichage des points
 
 }
-
 
 
 function updateCountdown() {
@@ -181,32 +204,3 @@ startButton.addEventListener('click', function() {
 });
 
 
-
-// Fonction pour vérifier les codes et gérer l'ajout de points et la redirection
-function check1Codes(button) {
-    const code1 = document.getElementById('code1').value;
-    
-    // Récupérer les codes requis depuis les attributs du bouton
-    const requiredCode1 = button.getAttribute('data-code1');
-
-    // Récupérer le lien de redirection depuis l'attribut du bouton
-    const redirectUrl = button.getAttribute('data-url');
-
-    // Récupérer la date de fin du compte à rebours depuis le HTML
-    const countdownDate = new Date(countdownContainer.getAttribute('data-end-time')).getTime();
-    const now = new Date().getTime();
-    
-    // Vérifier si les codes sont corrects
-    if (code1 === requiredCode1 ) {
-        // Si le compte à rebours n'est pas terminé, ajouter des points
-    
-        addPoints(10); // Ajouter le nombre de points souhaité
-        alert(`Félicitations ! Vous avez gagné ${points} points.`); // Afficher une alerte avec le nombre de points gagnés
-
-        
-        // Redirection vers l'URL spécifiée
-        location.href = redirectUrl;
-    } else {
-        alert('Codes incorrects');
-    }
-}
