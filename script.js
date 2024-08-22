@@ -120,7 +120,7 @@ function checkCodes(button) {
             addPoints(10); // Ajouter le nombre de points souhaité
 
         } else {
-            alert("Le compte à rebours est terminé, dommage.");
+            alert("Le compte à rebours est terminé, les points n'ont pas été ajoutés.");
         }
 
         // Redirection vers l'URL spécifiée
