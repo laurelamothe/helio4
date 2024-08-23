@@ -27,8 +27,8 @@ h2 {
 .container {
     text-align: center;
     background-color: rgba(0, 31, 63, 0.8);
-    padding: 20px;
-    border-radius: 10px;
+    padding: 50px;
+    border-radius: 50px;
     /*box-shadow: 0 0 20px rgba(0, 31, 63, 0.8);*/
 }
 
